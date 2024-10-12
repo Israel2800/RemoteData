@@ -13,6 +13,10 @@
 		C698AA172CBAD8F100FCDC74 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C698AA162CBAD8F100FCDC74 /* Base */; };
 		C698AA192CBAD8F300FCDC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C698AA182CBAD8F300FCDC74 /* Assets.xcassets */; };
 		C698AA1C2CBAD8F300FCDC74 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C698AA1B2CBAD8F300FCDC74 /* Base */; };
+		C698AA252CBAD95A00FCDC74 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698AA242CBAD95A00FCDC74 /* Network.framework */; };
+		C698AA272CBAD9E500FCDC74 /* InternetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698AA262CBAD9E500FCDC74 /* InternetMonitor.swift */; };
+		C698AA292CBAECBF00FCDC74 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698AA282CBAECBF00FCDC74 /* WebKit.framework */; };
+		C698AA2B2CBB02A000FCDC74 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698AA2A2CBB02A000FCDC74 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C698AA182CBAD8F300FCDC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C698AA1B2CBAD8F300FCDC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C698AA1D2CBAD8F300FCDC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C698AA242CBAD95A00FCDC74 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		C698AA262CBAD9E500FCDC74 /* InternetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitor.swift; sourceTree = "<group>"; };
+		C698AA282CBAECBF00FCDC74 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C698AA2A2CBB02A000FCDC74 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C698AA292CBAECBF00FCDC74 /* WebKit.framework in Frameworks */,
+				C698AA252CBAD95A00FCDC74 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				C698AA0E2CBAD8F100FCDC74 /* RemoteData */,
 				C698AA0D2CBAD8F100FCDC74 /* Products */,
+				C698AA232CBAD95900FCDC74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,19 @@
 				C698AA182CBAD8F300FCDC74 /* Assets.xcassets */,
 				C698AA1A2CBAD8F300FCDC74 /* LaunchScreen.storyboard */,
 				C698AA1D2CBAD8F300FCDC74 /* Info.plist */,
+				C698AA262CBAD9E500FCDC74 /* InternetMonitor.swift */,
+				C698AA2A2CBB02A000FCDC74 /* DataManager.swift */,
 			);
 			path = RemoteData;
+			sourceTree = "<group>";
+		};
+		C698AA232CBAD95900FCDC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C698AA282CBAECBF00FCDC74 /* WebKit.framework */,
+				C698AA242CBAD95A00FCDC74 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C698AA142CBAD8F100FCDC74 /* ViewController.swift in Sources */,
+				C698AA2B2CBB02A000FCDC74 /* DataManager.swift in Sources */,
+				C698AA272CBAD9E500FCDC74 /* InternetMonitor.swift in Sources */,
 				C698AA102CBAD8F100FCDC74 /* AppDelegate.swift in Sources */,
 				C698AA122CBAD8F100FCDC74 /* SceneDelegate.swift in Sources */,
 			);
